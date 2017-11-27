@@ -25,7 +25,7 @@ func greet(person: String) {
     print("hello, \(person)!")
 }
 // Now greet them by invoking the function
-greet(person : "Sara")
+greet(person : "Hello, Sara! A sincere pleasure to meet you on this very fine day.")
 //print:
 //
 //Hello, Sara
