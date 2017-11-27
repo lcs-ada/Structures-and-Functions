@@ -22,9 +22,26 @@ import Foundation
  */
 // Define the function here
 
+/// Calculate the distance between two points in a Cartesian plane.
+///
+/// - Parameters:
+///   - fromX: The abscissa of (x-value) of the first point.
+///   - fromY: The ordinate of (y-value) of the first point.
+///   - toX: The abscissa of (x-value) of the second point.
+///   - toY: The ordinate of (y-value) of the second point.
+/// - Returns: The distance between the first point and the second point.
+
+func distance(fromX: Double, fromY: Double, toX: Double, toY: Double) -> Double {
+    return sqrt(pow(fromX - toX, 2) + pow(fromY - toY, 2))
+}
+
 // Now invoke the function to calculate the distance between (0, 0) and (3, 4)
+distance(fromX: 0,fromY: 0,toX: 3,toY: 4)
+
+
 // NOTE: Before you run the code, make a prediction about the distance between these two points.
 
+//I think the distance is going to be 3.
 /*:
  ### Documenting functions
  When we start to add behaviour to our programs using functions, it's important to document how each function works.
